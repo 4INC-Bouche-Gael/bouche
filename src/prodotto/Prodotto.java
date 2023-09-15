@@ -15,17 +15,21 @@ public class Prodotto {
     private double peso;
     private double tara;
     private String descrizione;
-    private int[]  barCode;
-
+    //private int[]  barCode;
+    
+    
     public Prodotto(double prezzo, double peso, double tara, String descrizione, int[] barCode) {
         this.prezzo = prezzo;
         this.peso = peso;
         this.tara = tara;
         this.descrizione = descrizione;
+        /*
         this.barCode = new int [barCode.length];
         for(int i = 0; i<barCode.length; i++){
             barCode[i] = this.barCode[i];
         }
+        */
+        
     }
     
     public double prezzoIvato(){
@@ -48,7 +52,9 @@ public class Prodotto {
             somma += barCode[i];
         }
         
+        
     }
+    
     */
     
     
@@ -81,10 +87,12 @@ public class Prodotto {
     public String getDescrizione() {
         return descrizione;
     }
-
+    /*
     public int[] getBarCode() {
         return barCode;
     }
+    */
+    
     
     
     
