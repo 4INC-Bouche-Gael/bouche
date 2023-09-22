@@ -1,4 +1,3 @@
-
 package supermercato;
 
 public class Supermercato {
@@ -6,6 +5,7 @@ public class Supermercato {
     private String nome;
     private String indirizzo;
     private Prodotto[] prodotto;
+    private int dimL;
 
     public Supermercato(Prodotto[] prod, String nome, String indirizzo) {
         this.nome = nome;
@@ -21,6 +21,16 @@ public class Supermercato {
         return c;
     }
 
+    /*
+    
+     public void addProdotto(Prodotto pAdd){
+        if(dimL >- this.prodotto.length)
+            prodotto = resize((prodotto.lenght*20)/100);
+        prodotto[dimL] = pAdd;
+        dimL++;
+    }
+     */
+    
     public void addProdotto(Prodotto p) {
         Prodotto[] copiaProdotti = new Prodotto[prodotto.length + 1];
         for (int i = 0; i < copiaProdotti.length; i++) {
@@ -33,6 +43,7 @@ public class Supermercato {
         prodotto = copiaProdotti;
     }
 
+    /*
     public void addProdotto2(double prezzo, double iva, double peso, double tara, String descrizione, String codiceABarre) {
         Prodotto[] copiaProdotti = new Prodotto[prodotto.length + 1];
 
@@ -46,7 +57,7 @@ public class Supermercato {
         }
         prodotto = copiaProdotti;
     }
-
+     */
     public String prezzoAlto() {
         String nom = "";
         int pos = 0;
@@ -85,7 +96,7 @@ public class Supermercato {
         for (int i = 0; i < prodotto.length; i++) {
             media += prodotto[i].getPrezzo();
         }
-        media /= 2;
+        media /= prodotto.length;
 
         for (int i = 0; i < prodotto.length; i++) {
             if (prodotto[i].getPrezzo() > media) {
