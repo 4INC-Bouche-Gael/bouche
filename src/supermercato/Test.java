@@ -9,6 +9,7 @@ public class Test {
 
     public static void main(String[] args) {
 
+        /*
         Prodotto p1 = new Prodotto(10.0, 22.0, 1.5, 0.2, "Pane", "1234567890120");
         Prodotto p2 = new Prodotto(14.0, 12.0, 6.5, 2.2, "Acqua", "173562936298");
         Prodotto[] pr = new Prodotto[2];
@@ -25,8 +26,9 @@ public class Test {
         System.out.println("Il valore di tutta la merce è di: " + s.valoreMerce());
         System.out.println("Il peso minore è di: " + s.pesoMinore());
         System.out.println("Pordotti con il valore non ivato superiore al valore medio sono: " + s.merciSopraLaMedia());
+         */
+        
+        
     }
 
 }
-
-

@@ -1,6 +1,6 @@
 
 
-package pompaCarburante;
+package PompaCarburante;
 
 public class PompaCarburante {
 

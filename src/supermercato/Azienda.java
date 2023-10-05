@@ -20,7 +20,9 @@ public class Azienda {
         Supermercato [] sup = new Supermercato[filiari.length];
     }
     
-    public void addProdotto(){
+    //deve prende da parametro un oggetto della classe prodotto e lo inserisce 
+    //all'interno di un array di prodotti della classe Supermercato
+        public void addProdotto(Prodotto p){
         
     }
     

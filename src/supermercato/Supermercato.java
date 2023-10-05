@@ -42,7 +42,9 @@ public class Supermercato {
         }
         prodotto = copiaProdotti;
     }
-
+    
+    //metodo elimina prodotto dall'array di prodotti
+    
     /*
     public void addProdotto2(double prezzo, double iva, double peso, double tara, String descrizione, String codiceABarre) {
         Prodotto[] copiaProdotti = new Prodotto[prodotto.length + 1];
