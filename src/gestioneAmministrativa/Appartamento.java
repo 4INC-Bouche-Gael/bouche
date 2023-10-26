@@ -6,11 +6,16 @@ public class Appartamento {
     private double millesimals;
     private String flatOwner;
     
-
-    public Appartamento(int flatNum, String flatOwner, double millesimals) {
+    public Appartamento(int flatNum, double millesimals) {
         this.flatNum = flatNum;
-        this.flatOwner = flatOwner;
         this.millesimals = millesimals;
+    }
+    
+    //nel caso della composizione fare la copia.
+    public Appartamento(Appartamento copiaApp){
+        this.flatNum = copiaApp.flatNum;
+        this.flatOwner = copiaApp.flatOwner;
+        this.millesimals = copiaApp.millesimals;
     }
 
     public void setFlatOwner(String flatOwner) {
