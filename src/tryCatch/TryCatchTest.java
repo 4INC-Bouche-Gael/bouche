@@ -54,6 +54,7 @@ public class TryCatchTest {
        
         //gestione di più errori simultanemente
         
+        /*
         Scanner in = new Scanner(System.in);
         
         try {//inserire il comando da provare 
@@ -83,7 +84,26 @@ public class TryCatchTest {
         } catch (Exception e){
             System.err.println("Errore generico");
         
+        } finally{ //codice che indipendentemente dagli errori viene chiuso
+            System.out.println("il codice qua dentro viene eseguito indipendentemente dagli errori");
+        }
+        */
+        
+        try {
+            TryCatch t = new TryCatch(10, 20.0, 30.0);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        
+        }  
+        
+        try {
+            TryCatch t1 = new TryCatch(10, 20.0, 30.0);
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        
         }
     }
-       
 }
+    
+    
+
