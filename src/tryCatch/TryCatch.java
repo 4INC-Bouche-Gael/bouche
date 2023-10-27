@@ -78,16 +78,16 @@ public class TryCatch {
     }
 
     public final void setId(String id) throws Exception {
-        char[] idchar = new char[2];
-        String idnum;
+        char[] idChar = new char[2];
+        String idNum;
         try {
             if (!id.isEmpty()){
                 if (id.length() == 4) {
-                idchar = id.substring(0, 2).toCharArray();
-                idnum = id.substring(2);
-                Integer.parseInt(idnum);
+                idChar = id.substring(0, 2).toCharArray();
+                idNum = id.substring(2);
+                Integer.parseInt(idNum);
                 for (int i = 0; i < 2; i++)
-                    if(!Character.isLetter(idchar[i]))
+                    if(!Character.isLetter(idChar[i]))
                         throw new Exception("L'id contiene un carattere non valido");
                 this.id = id;
                 } else {
