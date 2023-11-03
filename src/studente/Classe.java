@@ -1,5 +1,7 @@
 package studente;
 
+import sun.text.normalizer.UTF16;
+
 /**
  *
  * @author gael.bouche
@@ -51,5 +53,12 @@ public class Classe {
             t += "studenti numero " + (i + 1) + " " + studenti[i].getNome() + " " + studenti[i].getCognome() + "\n";
         }
         return t;
+    }
+    
+    public String[] ordina(){
+        char c = ' ';
+        if( ){ 
+        
+        }
     }
 }
