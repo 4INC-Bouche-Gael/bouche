@@ -89,19 +89,7 @@ public class TryCatchTest {
         }
         */
         
-        try {
-            TryCatch t = new TryCatch(10, 20.0, 30.0);
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
         
-        }  
-        
-        try {
-            TryCatch t1 = new TryCatch(10, 20.0, 30.0);
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        
-        }
     }
 }
     
