@@ -1,11 +1,6 @@
 package studente;
 
-import sun.text.normalizer.UTF16;
 
-/**
- *
- * @author gael.bouche
- */
 public class Classe {
 
     private Studente capoClasse;
@@ -43,8 +38,18 @@ public class Classe {
         return studenti;
     }
 
-    public void invertiAttributi() {
-        //Non ho capito cosa fare in questo metodo
+    public void invertiAttributi() throws Exception {
+        String cognome = capoClasse.getNome();
+        String nome = capoClasse.getCognome();
+        capoClasse.setCognome(cognome);
+        capoClasse.setNome(nome);
+
+        for (int i = 0; i < studenti.length; i++) {
+            cognome = studenti[i].getNome();
+            nome = studenti[i].getCognome();
+            studenti[i].setCognome(cognome);
+            studenti[i].setNome(nome);
+        }
     }
 
     public String stampa() {
@@ -55,10 +60,4 @@ public class Classe {
         return t;
     }
     
-    public String[] ordina(){
-        char c = ' ';
-        if( ){ 
-        
-        }
-    }
 }
