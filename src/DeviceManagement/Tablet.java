@@ -8,7 +8,7 @@ package DeviceManagement;
  *
  * @author gaelb
  */
-public class Tablet extends DeviceManagement {
+public class Tablet extends Device {
     
     private String resolution;
 
@@ -27,9 +27,8 @@ public class Tablet extends DeviceManagement {
 
     @Override
     public String toString() {
-        return "Tablet{" + "resolution=" + resolution + '}';
+        return "Tablet{" + "code= " + super.getCode() + ", brand= " + super.getBrand() + ", model= " + super.getModel() + "Resolution: "+ resolution + '}';
     }
-    
     
     
 }

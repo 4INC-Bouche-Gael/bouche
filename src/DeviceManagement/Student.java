@@ -10,7 +10,7 @@ package DeviceManagement;
  */
 public class Student {
     private String name, surname;
-    DeviceManagement device;
+    Device device;
 
     public Student(String name, String surname) {
         this.name = name;
@@ -33,15 +33,17 @@ public class Student {
         this.surname = surname;
     }
 
-    public void setDevice(DeviceManagement device) {
-        this.device = device;
+    public Device getDevice() {
+        return device;
     }
     
-    
+    public void setDevice(Device device) {
+        this.device = device;
+    }   
     
     @Override
     public String toString() {
-        return "Student{" + "name=" + name + ", surname=" + surname + ", device=" + device + '}';
+        return "Student: " + "name=" + name + ", surname=" + surname + "\ndevice: " + "\nCode: "+ device.getCode()+"\nBrand: "+ device.getBrand()+ "\nModel:"+ device.getModel();
     }
     
     

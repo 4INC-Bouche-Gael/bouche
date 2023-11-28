@@ -2,21 +2,16 @@
 package DeviceManagement;
 
 
-public class DeviceManagement {
+public class Device {
     private String code, brand, model;
-    //Student owner;
     
-    public DeviceManagement(String code, String brand, String model/*,Student owner*/) {
+    
+    public Device(String code, String brand, String model/*,Student owner*/) {
         this.code = code;
         this.brand = brand;
         this.model = model;
-        /*this.owner = new Student(owner.getName(), owner.getSurname());*/
+        
     }    
-    /*
-    public void assignDevice(){
-        owner.setDevice(new DeviceManagement device);
-    }
-    */
     
     public String getCode() {
         return code;

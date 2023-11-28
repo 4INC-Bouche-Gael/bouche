@@ -27,7 +27,7 @@ public class SmartPhone extends Tablet{
 
     @Override
     public String toString() {
-        return "SmartPhone{" + "isDualSim=" + isDualSim + '}';
+        return "Smartphone{" + "code= " + super.getCode() + ", brand =" + super.getBrand() + ", model = " + super.getModel() + ", Resolution: "+ super.getResolution() +", Dual Sim: "+ isDualSim + '}';
     }
 
     

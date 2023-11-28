@@ -8,7 +8,7 @@ package DeviceManagement;
  *
  * @author gaelb
  */
-public class Computer extends DeviceManagement {
+public class Computer extends Device {
     
     private boolean isFisso;
 

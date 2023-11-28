@@ -22,11 +22,42 @@ public class Test {
         SmartPhone tel1 = new SmartPhone("LMN123", "Apple", "13", "160x80", true);
         SmartPhone tel2 = new SmartPhone("OPQ456", "Apple", "12", "160x80", false);
         
-        DeviceManagement d1 = new DeviceManagement(pc1.getCode(), pc1.getBrand(), pc1.getModel());
+        Device d1 = new Device(pc1.getCode(), pc1.getBrand(), pc1.getModel());
         System.out.println(d1.toString());
+        
+        System.out.println("---------------------------------------------------------------------------------");
         
         tab1 = tel1;
         System.out.println(tab1.toString());
+        
+        /*
+        tel1 = (SmartPhone) tab1;
+        Device d2 = new Device(tel1.getCode(), tel1.getBrand(), tel1.getModel());
+        System.out.println(d1.toString());
+        */
+        System.out.println("---------------------------------------------------------------------------------");
+        
+        Student pippo = new Student("Pippo", "Rossi");
+        pippo.setDevice(d1);
+        System.out.println(pippo.toString());
+        
+        System.out.println("---------------------------------------------------------------------------------");
+        
+        System.out.println(d1.getBrand());
+        System.out.println(d1.getCode());
+        System.out.println(d1.getModel());
+        
+        System.out.println("---------------------------------------------------------------------------------");
+        
+        Device d2 = new SmartPhone("AAABBB", "giggio",  "X23", "33x22", true);
+        System.out.println(d2.toString());
+        
+        System.out.println("---------------------------------------------------------------------------------");
+        
+        Student gino = new Student("Gino", "Bertuzzi");
+        gino.setDevice(d2);
+        System.out.println(gino.toString());
+        
     }
     
 }
